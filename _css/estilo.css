@@ -1,0 +1,266 @@
+/*@charset "UTF-8";
+@import url(<link href="https://fonts.googleapis.com/css?family=Inconsolata">);
+/* configuração do corpo*/
+@font-face{
+	font-family: 'Orbitron', sans-serif;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+}
+/* configuração da área interna*/
+#interface{
+	background-color: #fff;
+	width: 950px; /* largura */
+	height: auto;
+	margin: 0px auto 0px auto;	
+	box-shadow: 0px 0px 25px rgba(0,0,0,.5);
+	padding: 10px; /* espaçamento interno */
+}
+/* configuração do cabeçalho*/
+#cabecalho{
+	border-bottom: 1px #000000 solid;
+	height: 115px;
+	background-color:#fff;
+}
+#cabecalho h1{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 33pt;
+	color:#000;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+#cabecalho h2{
+	font-family: 'Orbitron', sans-serif;
+	margin-bottom: 0px;
+	padding: 0px;
+	font-size: 15px;
+	color:#000;
+}
+/* configuração da imagem do cabeçalho*/
+#icone{ 
+	position: relative;
+	top: -60px;
+	left: 850px;
+	height: 80px;
+	width: 80px;
+}
+/* configuração do menu*/
+#menu{
+	display: block;
+}
+#menu h1{
+	display: none;
+}
+/* configuração do menu*/
+#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+	float: right;
+	padding: 0px;
+	margin: 0px;
+	top: -30px;
+
+}
+/* configuração dos itens de menu*/
+#menu li{
+	display: inline-block;
+	background-color: #696969;
+	padding: 10px;
+	margin: 2px;
+}
+/* configuração dos links do menu*/
+#menu a{
+	color: #fff;
+	text-decoration: none;
+}
+#menu li:hover{
+	background-color: #fff;
+	transition: background .3s;
+	color: #000;
+}
+/* configurar a primeira coluna */
+#corpo{
+	display: block;
+	width: 485px;
+	float: left;
+	border-right: 1px solid #000000;
+	padding: 0px 15px 15px 0px;
+}
+#noticia h2{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 13pt;
+	color:#000;
+	background-color: #DCDCDC;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+#noticia h1{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+#noticia h3{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 9pt;
+	color: #000000;
+}
+.direita{
+	text-align: right;
+}
+/* configuração dos parágrafos */
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+.foto-legenda{
+	position: relative;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 0px 10px #fff;
+}
+.foto-legenda img{
+	width: 100%;
+	height: 100%;
+}
+.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 0.5s;
+}
+.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+#pFoto {
+	text-indent: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.detalhe img{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+#lateral{
+	display: block;
+	width: 420px;
+	float: right;
+	padding: 10px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+#lateral h1{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	margin-top: 0px;
+}
+#lateral h2{
+	font-family: 'Orbitron', sans-serif;
+	background-color: #DCDCDC;
+	font-size: 12pt;
+	color: #000;
+	padding: 5px;
+}
+#lateral h5{
+	font-family: 'Orbitron', sans-serif;
+	color: #000;
+	margin-bottom: 0px;
+}
+.ios img{
+	width: 90px;
+	height: auto;
+	position: relative;
+	margin-left: 120px;
+}
+.siri img{
+	float: left;
+	width: 420px;
+	height: auto;
+	padding: 5px;
+	position: relative;
+	left: -45px;
+}
+#rodape{
+	clear:both;
+	border-top: 1px solid #000;
+}
+#rodape p{
+	padding-top: 15px;
+	text-align: center;
+}
+#tabela{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto !important;
+	margin-right: auto !important; 
+}
+#tabela td{
+	border: 1px solid #606060;
+	padding: 10px;
+	vertical-align: top;
+}
+/* coluna da esquerda */
+#tabela .ce{
+	color:#fff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+	text-align: right;
+}
+/* coluna da direita */
+#tabela .cd{
+	background-color: #cecece;
+}
+/* legenda da tabela */
+#tabela caption{
+	color: #888;
+	font-size: 15px;
+	font-weight: bolder;
+}
+/* Mar/2013 */
+#tabela caption span{
+	display: block;
+	float: right;
+	color: #000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+#contato {
+	padding: 10px;
+}
+#usuario {
+	padding: 10px;
+}
+.charger img{
+	width: 420px;
+	height: auto;
+}
+.icloud img{
+	width: 320px;
+	padding: 10px;
+}
+.tela-infinita img{
+	width: 400px;
+	padding: 10px;
+}
+#radio img{
+	position: relative;
+	top: -150px;
+	float: right;
+}
+#radio audio{
+	position: relative;
+	top: -30px;
+	float: right;
+	right: -320px;
+}

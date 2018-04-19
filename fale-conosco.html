@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="_imagens/fa.ico">
+		  <meta charset="utf-8"/>
+		  <title> IPHONE X </title>
+		  <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		  <script language="javascript" src="_javascript/funcoes.js"></script>
+	     </head>
+	     <body>
+		    <div id="interface">
+			   <header id="cabecalho">
+          <nav id="menu">
+            <h1> Menu Principal </h1>
+            <ul>
+              <a href="index.html" onMouseOver="mudaFoto('_imagens/luk.png')"
+              onMouseOut="mudaFoto('_imagens/logox.jpg')">
+                <li> Home </li>
+              </a>
+              <a href="melhorias.html" onMouseOver="mudaFoto('_imagens/cpu.png')"
+              onMouseOut="mudaFoto('_imagens/logox.jpg')">
+                <li> Melhorias </li>
+              </a>
+              <a href="fotos.html" onMouseOver="mudaFoto('_imagens/camera2.png')"
+              onMouseOut="mudaFoto('_imagens/logox.jpg')">
+                <li> Fotos </li>
+              </a>
+              <a href="multimidia.html" onMouseOver="mudaFoto('_imagens/multimidia.png')"
+                onMouseOut="mudaFoto('_imagens/logox.jpg')">
+                <li> Multimídia </li>
+              </a>
+              <a href="fale-conosco.html" onMouseOver="mudaFoto('_imagens/contato_icone.png')"
+                onMouseOut="mudaFoto('_imagens/logox.jpg')">
+                <li> Fale conosco </li>
+              </a>
+            </ul>
+          </nav>
+          <hgroup id="titulo">
+            <h1> 
+              Apple IPHONE X  
+            </h1>
+            <h2> 
+              É poderoso em cada detalhe. E poderoso como um todo.
+            </h2> 
+          </hgroup>
+          <img id="icone" src="_imagens/logox.jpg"/>
+        </header>
+            <section id="corpo-inteiro">
+              <article id="noticia">
+                <header> 
+                  <hgroup> 
+                    <h3> Fale Conosco > Contato </h3>
+                    <h1> Formulário de Contato </h1>
+                  </hgroup>
+                </header>
+                <form id="contato" method="post" action="_php/faleconosco.php">
+                  <fieldset id="usuario">
+                    <legend> Identificação do Usuário </legend>
+                        <p>
+                            <label for="cNome">
+                             Nome:
+                            </label>
+                            <input type="text" name="tNome" id="cNome" placeholder="Nome completo"/>
+                        </p>
+                        <p>
+                            <label for="cSenha">
+                             Senha:
+                            </label>
+                            <input type="password" name="tSenha" id="cSenha" placeholder="8 dígitos"/>
+                        </p>
+                        <p>
+                            <label for="cEmail">
+                             E-mail:
+                            </label>
+                            <input type="email" name="tEmail" id="cEmail" placeholder="exemplo@mail.com.br"/>
+                        </p>
+                        <fieldset id="sexo">
+                            <legend> Sexo </legend>
+                            <input type="radio" name="tSexo" id="cMasc" value="Masculino"/>
+                                <label for="cMasc"> Masculino </label>
+                            <input type="radio" name="tSexo" id="cFem" value="Feminino"/>
+                                <label for="cFem"> Feminino </label>
+                        </fieldset>
+                        <p>
+                        <label for="cData">
+                            Data de Nascimento:
+                        </label>
+                        <input type="date" id="cData" name="tData"/>
+                        </p>
+                  </fieldset>
+                  <fieldset id="endereco">
+                    <legend> Endereço do Usuário </legend>
+                    <p>
+                      <label for="cLogradouro">
+                        Logradouro:
+                      </label>
+                      <input type="text" name="tLogradouro" 
+                        id="cLogradouro" placeholder="Av., Rua, etc..."/>
+                    </p>
+                    <p>
+                      <label for="cNumero">
+                        Número:
+                      </label>
+                      <input type="number" id="cNumero" name="tNumero"/>
+                    </p>
+                    <p>
+                      <label for="cEstado">
+                        Estado:
+                      </label>
+                      <select id="cEstado" name="tEstado">
+                        <option value="sp"> SP </option>
+                        <option value="rj"> RJ </option>
+                        <option value="mg"> MG </option>  
+                      </select>
+                    </p>
+                    <p>
+                      <label for="cCidade"> Cidade </label>
+                      <input type="text" name="tCidade" id="cCidade" list="cidades"/>
+                      <datalist id="cidades">
+                          <option> 
+                            Franca
+                          </option>
+                          <option>
+                            São Paulo
+                          </option>
+                          <option>
+                            Ribeirão Preto
+                          </option>
+                      </datalist>
+                    </p>
+                  </fieldset>
+                  <fieldset id="mensagem">
+                    <legend> Mensagem do Usuário </legend>
+                      <p>
+                    <label for="cGrau">
+                      Grau de Urgência:
+                    </label>
+                      Mínimo
+                      <input type="range" id="cGrau" name="tGrau" min="0" max="10" step="2"/>
+                      Máximo 
+                    </p>
+                    <label id="caixa-texto" for="cMensagem"> 
+                        Mensagem:
+                    </label>
+                    <p>
+                    <textarea id="cMensagem" name="tMensagem" placeholder="Deixe sua mensagem ..." cols="50" rows="10"></textarea>
+                    </p>
+                  </fieldset>
+                  <fieldset id="pedido">
+                    <legend> Quero um Iphone X </legend>
+                      <p>
+                    <input type="checkbox" id="cGostaria" name="tGostaria"/>
+                    <label for="cGostaria">
+                      Gostaria de adquirir um Iphone X quando disponível
+                    </label>
+                    </p>
+                    <p>
+                      <label for="cCor"> Cor: </label>
+					       <input type="color" name="tCor" id="cCor" value="#0000FF"/>
+                    </p>
+                    <p>
+                      <label for="cQtde"> Quantidade: </label>
+					       <input type="number" name="tQtde" id="cQtde" min="0" max="5" value="0" onchange="calc_total()"/>
+                    </p>
+                    <p>
+                      <label for="cTotal"> Preço Total: R$ </label>
+					      <input type="text" name="tTotal" id="cTotal" placeholder="Total a pagar" readonly/>
+                    </p>
+                </fieldset>
+				        <input type="image" name="tEnviar" src="_imagens/botao-enviar.png"/>
+                </form>
+              </article>
+            </section>
+      	     <footer id="rodape">
+              <p>
+                Copyright 2018 - Por: Guilherme Henrique e Vinicius Silveira <br/>
+                Engenharia de Software
+              </p>
+            </footer>
+          </div>
+      </body>
+</html>
